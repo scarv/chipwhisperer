@@ -1,0 +1,6 @@
+#! /usr/bin/make -f
+
+export PYBUILD_NAME = python3-chipwhisperer
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
